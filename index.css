@@ -1,0 +1,122 @@
+*
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+
+    width:350px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(15,1fr);
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+.red-triangle1{
+    -webkit-clip-path: polygon(0 0, 0 100%, 77% 50%);
+    clip-path: polygon(0 0, 0 100%, 50% 50%);
+        border: 0px solid;
+        background-color: red;
+        transform: scale(3) translateX(33%);
+        
+    }
+    .green-triangle1 {
+        border: 0px solid;
+        background-color: green;
+        -webkit-clip-path: polygon(50% 50%, 100% 0, 0 0);
+        clip-path: polygon(50% 50%, 100% 0, 0 0);
+        transform: scale(3) translateY(33%);
+    }
+    .blue-triangle1{
+        -webkit-clip-path: polygon(50% 49%, 100% 100%, 0 100%);
+        clip-path: polygon(50% 49%, 100% 100%, 0 100%);
+        border: 0px solid;
+        background-color: blue;
+        transform: scale(3) translateY(-33%);
+    }
+    .yellow-triangle1{
+        border: 0px solid;
+        background-color: yellow;
+        transform: scale(3) translateX(-33%);
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 52% 50%);
+    clip-path: polygon(100% 0, 100% 100%, 52% 50%);
+    }
+
+    .red-home {
+        border: none;
+        background-color: red;
+    }
+    
+    .red-home-inner {
+        background-color: white;
+    }
+    .red-home-coin {
+        background-color: red;
+        border-radius: 50%;
+    }
+    .green-home {
+        border: none;
+        background-color: green;
+    }
+    
+    .green-home-inner {
+        background-color: white;
+    }
+    .green-home-coin {
+        background-color: green;
+        border-radius: 50%;
+    }
+    .blue-home {
+        border: none;
+        background-color: blue;
+    }
+    
+    .blue-home-inner {
+        background-color: white;
+    }
+    .blue-home-coin {
+        background-color: blue;
+        border-radius: 50%;
+    }
+    .yellow-home {
+        border: none;
+        background-color: yellow;
+    }
+    
+    .yellow-home-inner {
+        background-color: white;
+    }
+    .yellow-home-coin {
+        background-color: yellow;
+        border-radius: 50%;
+    }
+    .transform-nw {
+        transform: translate(50%,50%);
+    }
+    .transform-ne {
+        transform: translate(50%,-50%);
+    }
+    .transform-sw {
+        transform: translate(50%,50%);
+    }
+    .transform-se {
+        transform: translate(50%,50%);
+    }
+    
+
+    .blue-star, .blue-safe {
+        background-color: blue;
+    }
+    .red-star, .red-safe {
+        background-color: red;
+    }
+    .green-star, .green-safe {
+        background-color: green;
+    }
+    .yellow-star, .yellow-safe {
+        background-color: yellow;
+    }
