@@ -4,7 +4,7 @@ const board=document.getElementById("board");
     for (let i = 1; i < 16; i++) {
       for (let j = 1; j < 16; j++) {
         const div = document.createElement("div");
-        // div.innerText = i + "," + j;
+        div.innerText = i + "," + j;
         board.appendChild(div);
         div.style.width = "40px";
         div.style.height = "40px";
@@ -282,6 +282,34 @@ const board=document.getElementById("board");
         div.innerText = "";
         div.append(img);
       }
+      if(i==1 && j==8){
+        const img = document.createElement("img");
+        img.setAttribute("src", "reshot-icon-down-arrow-VUE5WQFCX2.svg");
+        div.innerText = "";
+        div.append(img);
+      }
+
+      if(i==8 && j==15){
+        const img = document.createElement("img");
+        img.setAttribute("src", "reshot-icon-left-arrow-VCGUT7EKR3.svg");
+        div.innerText = "";
+        div.append(img);
+      }
+
+      if(i==15 && j==8){
+        const img = document.createElement("img");
+        img.setAttribute("src", "reshot-icon-arrow-up-ZGEKU95YAJ.svg");
+        div.innerText = "";
+        div.append(img);
+      }
+
+      if(i==8 && j==1){
+        const img = document.createElement("img");
+        img.setAttribute("src", "reshot-icon-right-arrow-UCA8NGYZDJ.svg");
+        div.innerText = "";
+        div.append(img);
+      }
+
       div.classList.add("box");
       div.dataset.i = i;
       div.dataset.j = j;
